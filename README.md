@@ -32,9 +32,9 @@ This project is a simple job board application that fetches and displays job lis
 ## API Configurations
 ### Environment Variables
 Create a `.env` file in the root of the project and include the following:
-```plaintext
-PORT=3000          # The port the server will listen on
-API_KEY=your_api_key_here   # Your API key for The Muse API
+
+`PORT=3000          # The port the server will listen on
+API_KEY=your_api_key_here   # Your API key for The Muse API`
 
 ## API Rate Limits
 The Muse API imposes rate limits. Here's how they are handled:
