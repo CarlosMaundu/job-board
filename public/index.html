@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Job Search</h1>
+            <input type="text" id="searchInput" placeholder="Search for job posting" onkeyup="filterJobs()">
+            <button onclick="searchJobs()">Search</button>
+            <select id="pageSize" onchange="fetchJobs()">
+                <option value="5">5 per page</option>
+                <option value="10" selected>10 per page</option>
+                <option value="15">15 per page</option>
+                <option value="20">20 per page</option>
+            </select>
+        </div>
+    </header>
+    <div id="job-count" class="job-count"></div>
+    <div id="jobs-container" class="jobs-container"></div>
+    <script src="app.js"></script>
+</body>
+</html>
